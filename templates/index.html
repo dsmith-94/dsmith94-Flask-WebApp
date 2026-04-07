@@ -2,7 +2,55 @@
 
 {% block title %} About Digital Product Management {%endblock%}
 {% block body %}
-<main>
+<main><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">Brand</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#profile" class="nav-item nav-link">Profile</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Messages</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Inbox</a>
+                <a href="#" class="dropdown-item">Sent</a>
+                <a href="#" class="dropdown-item">Drafts</a>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex" method="POST">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" />
+              <button
+                type="button"
+                class="btn btn-warning"
+                formaction="/search"
+              >
+                <i class="bi-search">Search</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+ 
   <p>Welcome to my website!</p>
   <h1>Dawson Smith </h1>
   <p>
